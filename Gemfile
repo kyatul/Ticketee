@@ -41,5 +41,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem "rspec-rails", "~> 3.2.1" ,group: [:development, :test]
 
 group :test do
-gem "capybara", "~> 2.4"
+	gem "capybara", "~> 2.4"
+	gem "factory_girl_rails", "~> 4.5"
 end
