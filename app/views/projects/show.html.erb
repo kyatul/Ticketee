@@ -1,4 +1,8 @@
 <% @title = "Sublime Text 3 - Projects - Ticketee" %>
 <%= link_to "Edit Project", edit_project_path(@project)%>
+<%= link_to "Delete Project", project_path(@project),
+    method: :delete,
+    data: { confirm: "Are you sure want to delete this project?"}
+%>
 <h1><%= @project.name %></h1>
 <h1><%= @project.description %></h1>
